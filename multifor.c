@@ -1,3 +1,11 @@
+/**
+ * Generates a list that goes from 0,0,0,0 to 3,3,3,3. (256 lines total)
+ * 
+ * General format:
+ * For variable v1,v2,...vn:
+ * v1<(v1_max-1)?v1++:(v1=0)^(v2<(v2_max-1)?v2++:(v2=0)^(......^vn++)...))
+ */
+
 #include <stdio.h>
 void main(void){
 	int a,b,c,d;
